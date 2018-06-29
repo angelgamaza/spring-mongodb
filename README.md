@@ -15,7 +15,7 @@ spring.data.mongodb.host = mongodb_host
 spring.data.mongodb.port = mongodb_port
 ```
 
-Initial MongoDB config:
+###Initial MongoDB config:
 
 Enter mongodb prompt typing ```mongo```.
 
