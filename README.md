@@ -1,4 +1,4 @@
-# Spring JPA Example
+# Spring MongoDB Example
 
 Spring REST API with MongoDB database connection.
 
