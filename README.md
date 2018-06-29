@@ -25,5 +25,5 @@ Create user for remote connections ```db.createUser({user:"user", pwd:"password"
 
 Connect to prompt with the new user ```mongo -u user -p password --authenticationDatabase database_name --port mongo_port```
 
-If you have to change mongodb port, edit ```/etc/mongod.conf```` replacing with the desired port.
+If you have to change mongodb port, edit ```/etc/mongod.conf``` replacing with the desired port.
 
