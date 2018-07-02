@@ -3,24 +3,29 @@ package com.gamaza.examples.springmongodb.model;
 import org.bson.types.ObjectId;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import javax.validation.constraints.NotNull;
+import javax.persistence.Column;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
 @Document(collection = "users")
 public class User {
 
+    @Id
     private ObjectId id;
 
-    @NotNull
+    @Column(nullable = false)
     private String name;
 
-    @NotNull
+    @Column(nullable = false)
     private String surnames;
 
+    @Column(nullable = false)
     private String description = "No description";
 
     public User(){}
 
-    public User(ObjectId id, @NotNull String name, @NotNull String surnames, @NotNull String description) {
+    public User(ObjectId id, String name, String surnames, String description) {
         this.id = id;
         this.name = name;
         this.surnames = surnames;
